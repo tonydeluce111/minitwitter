@@ -8,9 +8,10 @@ public class UserGroup implements Component, Visitable {
 	private Hashtable<Component, String> group;
  	private static int groupCount = 0; 
  	
- 	public UserGroup(String userGroupId) {
+ 	public UserGroup(String userGroupId, TwitterTree tree) {
  		this.userGroupId = userGroupId;
  		this.group = new Hashtable<Component, String>();
+ 		tree.add(this);
  		groupCount++;		
 		System.out.println("Added a new Group: " + userGroupId);
  	}
