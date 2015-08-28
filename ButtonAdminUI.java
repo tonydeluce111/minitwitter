@@ -59,8 +59,7 @@ private void initializeButtonAdminUI() {
   		@Override 
 		public void actionPerformed(ActionEvent arg0) { 
 			String[] name = { userIdField.getText() }; 
-			User newUser = new User(name[0], tree); 
-			tree.add(newUser);			
+			User newUser = new User(name[0], tree); 		
 		} 
  	}); 
  
@@ -68,8 +67,7 @@ private void initializeButtonAdminUI() {
  		@Override 
  		public void actionPerformed(ActionEvent arg0) { 
  			String[] name = { groupIdField.getText() }; 
- 			UserGroup newGroup = new UserGroup(name[0]); 
- 			tree.add(newGroup);
+ 			UserGroup newGroup = new UserGroup(name[0], tree); 
  		} 
  	}); 
  
